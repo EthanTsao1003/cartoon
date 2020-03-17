@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-dao/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-entity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-entity/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-util/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartoon-web/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

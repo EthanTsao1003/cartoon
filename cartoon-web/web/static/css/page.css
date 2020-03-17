@@ -1,0 +1,669 @@
+html,body{
+	background: #FFFFFF;
+}
+
+
+a{
+	
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+em{
+	position: absolute;
+	left: 4px;
+	top: 0;
+	color: #fff;
+    height: 18px;
+    display: inline-block;
+	display:inline;
+	font-size: 12px;
+	list-style: none;
+	text-align: -webkit-match-parent;
+	font-family: "微软雅黑";
+}
+sub{
+	vertical-align: sub;
+	font-size: smaller;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-top: 30px solid #fe8a19;
+	border-right: 30px solid transparent;
+}
+h3{
+	display: inline-block;
+	 font-weight: bold;
+	 font-family: Arial, "Microsoft YaHei", "Microsoft Sans Serif", "Microsoft SanSerf", 微软雅黑;
+	    font-size: 16px;
+	    font-weight: normal;
+	    color: #333;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
+	    white-space: nowrap;
+	    word-break: keep-all;
+	    margin-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+.body_div{
+	/* height: 2000px; */
+	width: 100%; 
+	min-width:100%;
+	text-align:center;
+	margin:0 auto;
+}
+.first_div{
+	width: 100%;
+	height: 360px;
+	text-align: center;
+	background-image: url(../img/xing.jpg);
+}
+
+.page_top_div{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	align-items:flex-start;
+	flex: 1;
+	overflow: hidden;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	width:100%;
+	height: 50px;
+	background: #FFFFFF;
+	/* border-bottom: 1px solid #898F94; */
+}
+.carousel_div{
+	background-color: #414141; 
+	height: 260px;
+	/* opacity: 0.7; */
+	padding-left:50px ;
+	padding-right: 50px;
+	padding-top: 50px;
+	/* padding-bottom: 50px ; */
+	/* #FF5F8C background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)); */
+	
+	
+/* 	background: -moz-linear-gradient(left, #58DBFA, #58DBFA);
+ */	/* Safari 5.1+, Chrome 10+ */
+/* 	background: -webkit-linear-gradient(left, #58DBFA, #FFFFFF);
+ */	/* Opera 11.10+ */
+/* 	background: -o-linear-gradient(left, #58DBFA, #f96);
+ */	
+	
+background-color:rgba(101,101,101,0.01);
+}
+
+
+/*
+搜索框
+*/
+.container {
+	position: relative;
+	display: block;
+    height: 50px;
+    width: 350px;
+	left: 110px;
+	margin-right: 80px;
+   /* margin: 0px auto 0 auto; */
+}
+.parent {
+    position: relative;
+	height: 50px;
+	width: 350px;
+	/* right: 200px; */
+}
+.search {
+    width: 300px;
+    height: 40px;
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 30px;
+  /*  position: absolute; */
+}
+.btn {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background: url("../img/搜索.png") no-repeat 4px 7px;
+    top: 0px;
+    left: 300px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.carousel_label_div{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	align-items:flex-start;
+	flex: 1;
+	overflow: hidden;
+	justify-content: center;
+	width: 100%;
+	height: 40px; 
+	background-color: #333333;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-top: 20px;
+	
+}
+.label_a{
+	display: inline-block;
+	white-space:nowrap;
+	width: 45px;
+	height: 40px;
+	margin: 0 12px 12px;
+	float: left;
+}
+.page_top_left_div{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+/* 	align-items:baseline; */
+	width: 400px;
+	height: 50px;
+	margin-left: 75px;
+	/* margin-right: 50px ; */
+	
+	
+}
+
+.page_mark_div{
+	display: inline-block;
+	font-size: 16px;
+	width: 150px;
+	height: 30px;
+	
+	/* margin-left: 150px; */
+	/* margin-right:50px ; */ 
+}
+.page_mark_img{
+	position: relative;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	border-radius: 7px;
+	content: url(../img/mark.png);
+	border: 0px;
+	cursor: pointer;
+}
+.page_top_label_div{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	align-items:center;
+	flex: 1;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+	height: 42px;
+	font-size: 14px;
+	text-align: center;
+	padding-top:10px ;
+	left: 20px;
+	
+}
+.page_top_a{
+	display:inline-block;
+	color: #333333;
+	background-color:transparent;
+	white-space:nowrap;
+	border: 0px;
+	height: 30px;
+	width: 60px;
+	cursor: pointer;
+}
+
+.page_top_right_div{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	align-items:flex-start;
+	justify-content: flex-start;
+	position: relative;
+	height: 50px;
+	width: 1000px;
+	top: 4px;
+	overflow:hidden
+	
+}
+.page_head_div{
+	
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	align-items:center;
+	flex: 1;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	height: 50px;
+	width: 500px;
+	left:20px;
+	font-size: 14px;
+	bottom: 2px;
+	display: none;
+}
+
+.page_head_a{
+	
+	display:inline-block;
+	color: #333333;
+	background-color:transparent;
+	white-space:nowrap;
+	border: 0px;
+	height: 10px;
+	width: 60px;
+	cursor: pointer;
+	/* width: 10px;
+	height: 20px; */
+	
+}
+.page_head_img{
+	position: relative;
+	top: 1px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	content: url(../img/carousel/6.png);
+	border: 0px;
+}
+.page_loging_div{
+
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	align-items:center;
+	flex: 1;
+	overflow: hidden;
+	position: relative;
+	height: 38px;
+	width: 50px;
+	font-size: 14px;
+	left: 270px;
+	padding-top: 2px;
+}
+
+
+.cartoon_div{
+	background-color: #FFFFFF;
+	display:flex;
+	flex-direction: row;
+	flex-wrap:nowrap;
+	position: relative;
+	justify-content:center;
+	height: 1200px;
+	/* width: 100%; */
+	/* border: 1px solid #92FFFF; */
+	top: 50px;
+	text-align: center;
+	margin: 0 auto;
+	flex: 1;
+	overflow: hidden;
+}
+.cartoon_left_div{
+	display: inline-block;
+	position: relative;
+	height: 580px;
+	width: 784px;
+	
+}
+.cartoon_right_div{
+	display: inline-block;
+	position: relative;
+	height: 580px;
+	width: 280px;
+	/* border: 1px solid #92FFFF; */
+	left: 7px;
+	
+}
+
+
+.cartoon_type_div{
+	height: 60px;
+	width: 784px; 
+	/* border: 1px solid #92FFFF; */
+	text-align: left;	
+	font-size: 30px ;
+	
+	padding-top: 20px;
+	color: #333333;
+	
+}
+.cartoon_recommend_div{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	position: relative;
+	overflow: hidden;
+	justify-content:space-between;
+	height: 480px;
+	width: 784px;
+	/* border: 1px solid #92FFFF; */
+	margin-bottom: 25px;
+	color: #333333;
+	/* margin-top: 50px; */
+
+}
+
+.cartoon_put_div{
+	margin-bottom: 5px;
+	margin-left:0px ;
+	margin-right: 10px;
+	width: 135px;
+	height: 235px;
+	/* border: 1px solid #92FFFF; */
+	
+}
+.cartoon_title_div{
+	position: relative;
+	width: 135px;
+	height: 180px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.cartoon_title_img{
+	width: 135px;
+	height: 180px;
+	max-width: 135px;
+	max-height: 180px; 
+	border: 0px;
+	/* background-repeat:  no-repeat; */
+	/* src:url(../img/CartoonInfo/benghuai3.jpg); */
+	background : url(../img/title.png) no-repeat;
+	background-size: 135px;
+}
+.pt_1{
+	content: url(../img/cartoon/花丸幼稚园.jpg);
+	
+}
+.pt_2{
+	content: url(../img/cartoon/初恋怪兽.jpg);
+	
+}
+.pt_3{
+	content: url(../img/cartoon/夜曲.jpg);
+	
+}
+.pt_4{
+	content: url(../img/cartoon/武林之王的退隐生活.jpg);
+}
+.pt_5{
+	content: url(../img/cartoon/阿波连.jpg);
+}
+.pt_6{
+	content: url(../img/cartoon/动物园.jpg);
+}
+.pt_7{
+	content: url(../img/cartoon/神兽.jpg);
+}
+.pt_8{
+	content: url(../img/cartoon/英雄再临.jpg);
+}
+.pt_9{
+	content: url(../img/cartoon/休屠.jpg);
+}
+.cartoon_title_serial_div{
+	position: absolute;
+	bottom: -8.5px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	/* position: relative; */
+	/* bottom: 24px; */
+	width: 100%;
+	height: 18px;
+	/* padding-top: 2px; */
+	background-color:rgba(0,0,0,0.5);
+	font-family: "微软雅黑";
+	/* margin-top: 0; */
+	font-size: 12px;
+	color: #FFFFFF;
+	
+}
+.cartoon_title_span{
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+	width: 100px;
+	height:20px ;
+	word-break:normal; 
+	width:auto; 
+	display:block; 
+	/* white-space:pre-wrap; */
+	word-wrap : break-word ;
+	color: #333333;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.cartoon_author_span{
+	display: block;
+	font-size: 12px;
+	color: #999;
+	width: 100px;
+	height:20px ;
+	font-family: "微软雅黑";
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	width:auto; 
+}
+
+.cartoon_ranking_div{
+	
+	width: 279px; 
+	/* border: 1px solid #92FFFF; */
+	/* text-align: left;	
+	font-size: 30px ;
+	color: #333333; */
+	
+	
+}
+.cartoon_ranking_list_div{
+	width: 280px;
+	margin-right: 0px;
+	    height: auto!important;
+	    min-height: 0px;
+}
+
+.rank_tabs_ul{
+	width: 256px;
+	    height: 340px;
+		list-style: none;
+		
+		    margin-block-end: 1em;
+		    margin-inline-start: 0px;
+		    margin-inline-end: 0px;
+		    padding-inline-start: 40px;
+			color: -internal-root-color;
+}
+
+ .rank_tabs_first_li{
+	display: list-item;
+	position: relative;
+	text-align: left;
+	left: -42px;
+	width: 278px;
+	height: 110px;
+	text-align: -webkit-match-parent;
+}
+.rank_first_img{
+	position: relative;
+	top: -2px;
+	min-width: 80px;
+	min-height: 105px;
+	width: 80px;
+	height: 105px;
+	border: 1px solid #e6e6e6;
+	/* background-repeat:  no-repeat; */
+	/* src:url(../img/CartoonInfo/benghuai3.jpg); */
+	background : url(../img/cartoon/夜曲.jpg) no-repeat;
+	background-size: 80px;
+}
+.rank_first_span{
+	position: relative;
+	left: -5px;
+	text-align: left;
+	vertical-align: top;
+	display: inline-block;
+	
+	width: 179px;
+	height: 93px;
+	background: #EBEFF2;
+	padding-left: 12px;
+	padding-top: 11px;
+}
+.rank_p{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	margin-top: 6px;
+	    color: #666;
+}
+.rank_tabs_li{
+	display: list-item;
+	position: relative;
+	text-align: left;
+	left: -42px;
+	width: 278px;
+	height: 20px;
+	margin-top: 2px;
+	margin-bottom: 6px;
+	/* text-align: -webkit-match-parent; */
+	cursor: pointer;
+}
+.c_23{
+		width:20px;
+		text-align: left;
+		padding-left: 4px;
+	    background: #fe8a19;
+	    border: none;
+	    color: #fff;
+	    vertical-align: top;
+}
+.rank_tabs_title_span{
+	display: inline-block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	width: 100px;
+	height: 18px;
+	text-align: left;
+	padding-left: 38px;
+}
+.rank_tabs_sec_span{
+	position: relative;
+	display: inline-block;
+	    width: 130px;
+	    height: 18px;
+	    color: #666;
+	    text-align: right;
+		font-size: 12px;
+		font-family: "微软雅黑";
+		bottom: 4.5px;
+}
+.c_4_10{
+	border: 1px solid #e6e6e6;
+	    color: #808080;
+		background: #FFFFFF;
+}
+.rank_img{
+	max-width: 280px;
+	max-height: 220px;
+	width: 280px;
+	height: 220px;
+	content: url(../img/cartoon/UW.jpg);
+}
+
+
+.boutique_div{
+	display: flex;
+	flex: 1;
+	overflow:hidden;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	width: 1071px;
+	margin-top: 20px;
+
+}
+
+.boutique_put_div{
+	margin-bottom: 5px;
+	margin-left:52px ;
+	margin-right: 0px;
+	width: 135px;
+	height: 235px;
+	/* border: 1px solid #92FFFF; */
+	
+}
+
+.boutique_put_first{
+margin-bottom: 5px;
+	margin-left:1px ;
+	margin-right: 0px;
+	width: 135px;
+	height: 235px;
+	/* border: 1px solid #92FFFF; */
+}
+
+#boutique_pt1{
+	content: url(../img/cartoon/约定的梦幻岛.jpg);
+}
+#boutique_pt2{
+	content: url(../img/cartoon/我的英雄学院.jpg);
+}
+#boutique_pt3{
+	content: url(../img/cartoon/鬼灭之刃.jpg);
+}
+#boutique_pt4{
+	content: url(../img/cartoon/勇者死了.jpg);
+}
+#boutique_pt5{
+	content: url(../img/cartoon/石纪元.jpg);
+}
+#boutique_pt6{
+	content: url(../img/cartoon/钢之炼金术师.jpg);
+}
+#boutique_pt7{
+	content: url(../img/cartoon/入间同学入魔了.jpg);
+}
+#boutique_pt8{
+	content: url(../img/cartoon/齐木楠雄的灾难.jpg);
+}
+#boutique_pt9{
+	content: url(../img/cartoon/史莱姆.jpg);
+}
+#boutique_pt10{
+	content: url(../img/cartoon/辉夜大小姐想让我告白,天才们的恋爱头脑战.png);
+}
+#boutique_pt11{
+	content: url(../img/cartoon/灵能百分百.jpg);
+}
+#boutique_pt12{
+	content: url(../img/cartoon/平凡职业造就世界最强.jpg);
+}

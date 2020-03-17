@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ethan.cartoon.dao.IUserDao">
+
+    <resultMap id="userMap" type="user">
+        <id property="userId" column="u_id" />
+        <result property="userNumber" column="u_number" />
+        <result property="userPassword" column="u_password" />
+        <result property="userName" column="u_name"/>
+        <result property="userEmail" column="u_email"/>
+        <result property="userTel" column="u_tel"/>
+        <association property="personage" resultMap="personageMap"/>
+    </resultMap>
+
+    <resultMap id="personageMap" type="personage">
+        <id property="personageId" column="p_id"/>
+        <result property="intro" column="p_intro"/>
+        <result property="head" column="p_head"/>
+        <result property="birthday" column="p_birthday"/>
+        <result property="sex" column="p_sex"/>
+    </resultMap>
+
+
+
+    <select id="listUser" resultMap="userMap">
+        select u_id, u_number, u_password, u_name, u_email, u_tel from user_info
+    </select>
+
+    <select id="login" parameterType="user" resultMap="userMap">
+        select u.u_id, u_number, u_password, u_name, u_email, u_tel, p_id, p_intro, p_head, p_birthday, p_sex
+        from user_info u left join personage_info p on u.u_id = p.u_id
+        where u_number = #{userNumber} and u_password = #{userPassword}
+    </select>
+    
+    <insert id="saveUser" parameterType="user">
+        insert  user_info(u_number, u_password, u_name,u_email, u_tel)
+         values(#{userNumber}, #{userPassword}, #{userName},#{userEmail}, #{userTel})
+    </insert>
+
+    <select id="getUserByNumber" parameterType="user" resultMap="userMap" >
+        select u_number from user_info where u_number = #{userNumber};
+    </select>
+
+    <update id="updatePersonage" parameterType="user" >
+      update user_info as u
+       left join personage_info as p
+	    on u.u_id = p.u_id
+	     set u.u_name = #{userName}, p.p_intro = #{personage.intro},
+	      p.p_head = #{personage.head}, p.p_birthday =  #{personage.birthday}, p.p_sex =  #{personage.sex}
+	      where u.u_id = #{userId}
+    </update>
+</mapper>
+

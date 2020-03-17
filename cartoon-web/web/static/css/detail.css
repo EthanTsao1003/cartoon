@@ -1,0 +1,447 @@
+html{
+	overflow-y: scroll;
+	overflow-x: auto;
+	background: #FAFAFA;
+}
+
+
+
+.detail{
+	
+	width: 1160px;
+	padding: 40px 48px;
+	margin: 24px auto 80px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px 0 rgba(106,115,133,.08);
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+
+.detail_top{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex: 1;
+}
+
+
+.img_div{
+	width: 240px;
+	height: 320px;
+}
+
+.detail_img{
+	width: 240px;
+	height: 320px;
+	min-width: 240px;
+	min-height: 320px;
+	max-width: 240px;
+	max-height: 320px; 
+}
+#detail_img{
+	content: url(../img/cartoon/我的英雄学院.jpg);
+}
+
+.detail_top_right{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex: 1;
+	width: calc(100% - 240px);
+	min-height: 320px;
+	padding-left: 28px;
+	box-sizing: border-box;
+}
+
+.hierarchy_div{
+	display: block;
+}
+.hierarchy_div2{
+	
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	flex: 1;
+	height: 28px;
+	max-height: 28px;
+	
+}
+
+.hierarchy_div3{
+	
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	flex: 1;
+	height: 44px;
+	max-height: 44px;
+	margin-top: 21px;
+}
+
+.detail_h1{
+	margin: 0 0 11px;
+	font-size: 28px;
+	font-weight: 400;
+	color: rgba(0,0,0,.87);
+	white-space: nowrap;
+	text-align: left;
+}
+
+.detail_h2{
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(0,0,0,.56);
+	white-space: nowrap;
+	text-align: left;
+}
+
+.label_div{
+	display: block;
+	margin-top: 14px;
+	font-size: 14px;
+	line-height: 2;
+	color: rgba(0,0,0,.34);
+}
+
+.label_img{
+	margin-right: 8px;
+	width: 16px;
+	height: 16px;
+	min-width: 16px;
+	min-width: 16px;
+	max-width: 16px;
+	max-height: 16px;
+}
+#label_img1{
+	content: url(../img/icon/标签.svg);
+}
+#label_img2{
+	content: url(../img/icon/更新至.svg);
+}
+
+#label_img3{
+	content: url(../img/icon/更新时间.svg);
+}
+
+#label_img4{
+	position: relative;
+	top: 1px;
+	content: url(../img/icon/追漫.svg);
+}
+
+.label_span{
+	white-space: nowrap;
+	width: 780px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 2;
+	color: rgba(0,0,0,.34);
+	text-align: left;
+}
+
+.text_div{
+	margin-top: 10px;
+	text-align: left;
+	height: 78px;
+	max-height: 78px;
+	overflow: hidden;
+}
+
+.text_span{
+	margin-top: 8px;
+	font-size: 14px;
+	white-space: normal;
+	color: rgba(0,0,0,.56);
+}
+
+.detail_btn{
+	display: flex;
+	width: 200px;
+	height: 44px;
+	margin-right: 16px;	
+	font-size: 16px;
+	color: #fff;
+	background-color: #3af;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	box-sizing: border-box;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+#start_btn:active{
+	position: relative;
+	top:1px;
+	left: 1px;
+	width: 199px;
+	height: 43px;
+	margin-right: 17px;	
+	background-color: #008ff5;
+}
+#start_btn:hover{
+	background-color: #008ff5;
+}
+
+#collect_btn{
+	width: 144px;
+	background-color: #fff;
+	color: rgba(0,0,0,.7);
+	border: 1px solid rgba(0,0,0,.12);
+}
+
+#collect_btn:active{
+	position: relative;
+	top:1px;
+	left: 1px;
+	width: 143px;
+	height: 43px;
+	background-color: #EDFAFF;
+	color: rgba(0,0,0,.7);
+	border: 1px solid rgba(0,0,0,.12);
+}
+#collect_btn:hover{
+	background-color: #EDFAFF;
+}
+
+
+.detail_middle{
+	display: flex;
+	align-items: center;
+	margin-top: 48px;
+	font-size: 24px;
+	color: rgba(0,0,0,.87);
+	height: 30px;
+}
+
+.detail_bottom{
+	margin-top: 20px;
+}
+
+.header{
+	text-align: left;
+}
+
+.detail_button{
+	font: 400 13.3333px Arial;
+	background-color: transparent;
+	transform-origin: center center;
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+	margin-right: 32px;
+	margin-bottom: 8px;
+	font-size: 16px;
+	line-height: 2;
+	box-sizing: border-box;
+	transform-origin: center center;
+	color: rgba(0,0,0,.56);
+}
+
+.detail_button:hover{
+	color: rgba(0,0,0,.87);
+}
+
+.detail_button:focus{
+
+	outline-color: rgba(255,255,255,0);
+}
+
+
+#button_start{
+	color: #32aaff!important;
+}
+
+.data{
+	margin-top: 12px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.data_button{
+	position: relative;
+    width: 196.5px;
+    height: 48px;
+    padding: 0 12px 0px 12px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.87);
+    text-align: left;
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+	cursor: pointer;
+}
+
+.data_button:active{
+	width: 194.5px;
+	height: 46px;
+	padding: 0 12px 0px 12px;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 16px;
+	margin-right: 16px;
+}
+.data_button:hover{
+	background-color: #EDFAFF;
+}
+
+.short_title{
+	padding-right: 8px;
+	font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.87);
+    text-align: left;
+}
+
+.data_title{
+	font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.87);
+    text-align: left;
+	flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recommend_div{
+	display:flex ;
+	margin-top: 30px;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex: 1;
+	overflow:hidden;
+	box-sizing: border-box;
+}
+
+.detail_recommend{
+	display: flex;
+	flex: 1;
+	overflow:hidden;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+}
+.detail_recommend2{
+	display: flex;
+	flex: 1;
+	overflow:hidden;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+	margin-left: 28px;
+}
+
+.detail_title_serial{
+	position: absolute;
+	bottom: -8.5px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 18px;
+	background-color:rgba(0,0,0,0.5);
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+
+.recommend_cartoon_title_div{
+	position: relative;
+	width: 150px;
+	height: 225px;
+	overflow: hidden;
+}
+
+.recommed_img{
+	width: 150px;
+	height: 225px;
+	max-width: 150px;
+	max-height: 225px;
+	border: 0px;
+	content: url(../img/cartoon/benghuai3.jpg);
+	background-size: 150px;
+}
+
+#rept1{
+	content: url(../img/cartoon/史莱姆.jpg);
+}
+
+#rept2{
+	content: url(../img/cartoon/benghuai3.jpg);
+}
+
+#rept3{
+	content: url(../img/cartoon/死神.jpg);
+}
+
+#rept4{
+	content: url(../img/cartoon/海贼王.jpg);
+}
+
+#rept5{
+	content: url(../img/cartoon/终结的炽天使.jpg);
+}
+
+#rept6{
+	content: url(../img/cartoon/fate.jpg);
+}
+
+.recommed_title_span{
+	display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 150px;
+    height: 20px;
+	white-space: nowrap;
+    color: rgb(104, 104, 105);
+    text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: center;
+}
+.recommed_author_span{
+	width: 150px;
+	font-size: 12px;
+	color: #999;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	text-align: center;
+}
+
+.pop2{
+	display: flex;
+	position: fixed;
+	width: 200px;
+	height: 100px;
+	top: 42%;
+	left: 43%;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	color: #5ebf70;
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid #c6d8f2 ;
+}

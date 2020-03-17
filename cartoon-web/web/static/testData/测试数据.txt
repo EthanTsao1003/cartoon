@@ -1,0 +1,82 @@
+<button class="detail_button" id="button_start">
+						1 - 50
+					</button>
+					
+					<button class="detail_button">
+						51 - 100
+					</button>
+					
+					<button class="detail_button">
+						101 - 150
+					</button>
+					
+					<button class="detail_button">
+						151 - 200
+					</button>
+					
+					<button class="detail_button">
+						201 - 250
+					</button>
+					
+					
+					
+					
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">001</div>-->
+<!--						<div class="data_title">绿谷出久：原点</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">002</div>-->
+<!--						<div class="data_title"> 怒吼吧肌肉</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">003</div>-->
+<!--						<div class="data_title">入学考试</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">004</div>-->
+<!--						<div class="data_title">起跑线</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">005</div>-->
+<!--						<div class="data_title">多灾多难的入学</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">006</div>-->
+<!--						<div class="data_title">此刻我能做到的事</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">007</div>-->
+<!--						<div class="data_title">穿上制服吧？</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">008</div>-->
+<!--						<div class="data_title">奋起吧废久</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">009</div>-->
+<!--						<div class="data_title">废久VS小胜</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">010</div>-->
+<!--						<div class="data_title">崩溃吧爆豪</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">011</div>-->
+<!--						<div class="data_title">爆豪的起跑线</div>-->
+<!--					</div>-->
+<!--					-->
+<!--					<div class="data_button">-->
+<!--						<div class="short_title">012</div>-->
+<!--						<div class="data_title">非常好加油吧饭田同学</div>-->
+<!--					</div>-->

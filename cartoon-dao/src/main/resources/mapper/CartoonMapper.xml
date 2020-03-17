@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ethan.cartoon.dao.ICartoonDao">
+
+    <resultMap id="collectMap" type="collect">
+        <id property="collectId" column="c_id" />
+        <association property="cartoonInfo" resultMap="cartoonMap"/>
+        <association property="user" resultMap="userMap"/>
+    </resultMap>
+
+    <resultMap id="recordMap" type="record">
+        <id property="recordId" column="r_id" />
+        <result property="time" column="r_time" />
+        <result property="onRecord" column="r_record"/>
+        <association property="cartoonInfo" resultMap="cartoonMap"/>
+        <association property="user" resultMap="userMap"/>
+    </resultMap>
+
+    <resultMap id="cartoonMap" type="edu.ethan.cartoon.entity.CartoonInfo">
+        <id property="cartoonId" column="c_id" />
+        <result property="cartoonTitle" column="c_title" />
+        <result property="cartoonAuthor" column="c_author" />
+        <result property="cartoonCategory" column="c_category"/>
+        <result property="cartoonIntro" column="c_intro"/>
+        <result property="cartoonSerialize" column="c_serialize"/>
+        <result property="cartoonCover" column="c_cover"/>
+        <result property="cartoonResource" column="c_resource"/>
+        <result property="cartoonState" column="c_state"/>
+    </resultMap>
+
+    <resultMap id="userMap" type="user">
+        <id property="userId" column="u_id" />
+        <result property="userNumber" column="u_number" />
+        <result property="userPassword" column="u_password" />
+        <result property="userName" column="u_name"/>
+        <result property="userEmail" column="u_email"/>
+        <result property="userTel" column="u_tel"/>
+    </resultMap>
+
+    <select id="listCartoon" resultMap="cartoonMap">
+        select c_id, c_title, c_author, c_category, c_intro, c_serialize, c_cover, c_resource, c_state from cartoon_info limit #{param1},#{param2}
+    </select>
+
+    <select id="getCartoonById" parameterType="integer" resultMap="cartoonMap">
+        select c_id, c_title, c_author, c_category, c_intro, c_serialize, c_cover, c_resource, c_state from cartoon_info where c_id = #{cartoonId}
+    </select>
+
+    <insert id="collect" parameterType="collect">
+        insert into collect(cartoon_id, u_id) values (#{cartoonInfo.cartoonId},#{user.userId})
+    </insert>
+
+    <select id="collectOrNot" parameterType="collect" resultMap="collectMap">
+        select c.c_id, collect.u_id from cartoon_info c
+        left join collect on c.c_id = cartoon_id
+        left join user_info u on collect.u_id = u.u_id
+         where cartoon_id = #{cartoonInfo.cartoonId} and collect.u_id = #{user.userId}
+    </select>
+
+    <delete id="deselectCollect" parameterType="collect">
+        delete from collect where cartoon_id = #{cartoonInfo.cartoonId}
+    </delete>
+
+    <select id="listCollect" parameterType="user" resultMap="collectMap">
+        select c.c_id , c_title, c_author, c_category, c_intro, c_serialize, c_cover, c_resource, c_state from cartoon_info c
+        left join collect on c.c_id = cartoon_id
+        left join user_info u on collect.u_id = u.u_id
+        where collect.u_id = #{userId}
+    </select>
+
+    <insert id="record" parameterType="record">
+        insert into record(c_id, u_id, r_time, r_record, r_judge) values (#{cartoonInfo.cartoonId},#{user.userId}, default, #{onRecord}, #{judge})
+        ON DUPLICATE KEY UPDATE r_judge = #{judge}, r_record = #{onRecord}, r_time = default
+    </insert>
+
+
+    <select id="listRecord" parameterType="user" resultMap="recordMap">
+        select c.c_id , c_title, c_author, c_category, c_intro, c_serialize, c_cover, c_resource, c_state, r.r_record, r.r_time from cartoon_info c
+        left join record r on c.c_id = r.c_id
+        left join user_info u on r.u_id = u.u_id
+        where r.u_id = #{userId}
+    </select>
+
+    <select id="recordRead" parameterType="record" resultMap="recordMap">
+        select r_id, u_id, c_id, r_time, r_record from record where u_id = #{user.userId} and c_id = #{cartoonInfo.cartoonId}
+    </select>
+</mapper>

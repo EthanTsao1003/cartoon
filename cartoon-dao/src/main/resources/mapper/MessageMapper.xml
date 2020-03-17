@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ethan.cartoon.dao.IMessageDao">
+
+    <resultMap id="messageMap" type="edu.ethan.cartoon.entity.Message">
+        <id property="messageId" column="m_id"/>
+        <result property="title" column="m_title"/>
+        <result property="content" column="m_content"/>
+        <result property="time" column="m_time"/>
+        <result property="state" column="m_state"/>
+        <result property="exporter" column="m_exporter"/>
+        <result property="receiver" column="m_receiver"/>
+        <result property="userName" column="u_name"/>
+    </resultMap>
+
+    <insert id="saveMessage" parameterType="message">
+        insert into message(m_title, m_content, m_state, m_exporter, m_receiver, m_time) values(#{title}, #{content}, 1, #{exporter}, #{receiver}, default)
+    </insert>
+
+    <select id="inbox" parameterType="user" resultMap="messageMap">
+        select m_id, m_title, m_content, m_time, m_state, m_exporter, m_receiver, u_name from message left join user_info on u_id = m_exporter where m_receiver = #{userId}
+    </select>
+
+    <select id="outbox" parameterType="user" resultMap="messageMap">
+        select m_id, m_title, m_content, m_time, m_state, m_exporter, m_receiver, u_name from message left join user_info on u_id = m_receiver where m_exporter = #{userId} and m_receiver != #{userId}
+    </select>
+
+    <insert id="feedback" parameterType="feedback">
+        insert into feedback(f_type, f_contact, f_content, u_id) values( #{type}, #{contact}, #{content}, #{userId})
+    </insert>
+</mapper>
+

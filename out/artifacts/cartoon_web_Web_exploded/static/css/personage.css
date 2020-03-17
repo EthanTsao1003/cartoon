@@ -1,0 +1,643 @@
+html,body{
+	font-size: 12px;
+	font-family: Arial, "Microsoft YaHei", "Microsoft Sans Serif", "Microsoft SanSerf", 微软雅黑;
+/* 	overflow-x: auto;
+	overflow-y: scroll; */
+	margin: 0;
+	padding: 0;
+	background-color: #FAFAFA;
+}
+
+
+
+.personage_body{
+
+	background: #FAFAFA;
+	height: 100%;
+	overflow:hidden;
+	
+}
+
+
+.personage_second_div{
+	display: flex;
+	width: 1160px;
+	/* min-width: 85%; */
+	height: calc(94vh - 74px);
+	background: #FFFFFF;
+	margin-top: 24px;
+	margin-left: 7%;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	flex: 1;
+	overflow:hidden;
+}
+
+.personage_menu{
+	display: flex;
+	background: #ECEDF0;
+	width: 220px;
+	height: 473px;
+	padding-left: 12px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex: 1;
+	overflow:hidden;
+}
+
+.menu_content{
+	width: 800px ;
+	height: 460px;
+	padding-left: 64px;
+	padding-right: 64px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	color: rgba(0,0,0,.56);
+}
+
+.menu{
+	display: flex;
+	width: 220px;
+	height: 56px;
+	max-width: 220px;
+	max-height: 56px;
+	
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	flex: 1;
+	overflow:hidden;
+	cursor: pointer;
+	color: rgba(0,0,0,.56);
+}
+
+#menu1{
+	color: #32aaff;
+}
+
+.menu_img_div{
+	
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+	/* max-width: 24px;
+	max-height: 24px; */
+	text-align: center;
+}
+.menu_img{
+	width: 24px;
+	height: 24px;
+	min-width: 24px;
+	min-width: 24px;
+	max-width: 24px;
+	max-height: 24px;
+}
+.pp1{
+	content: url(../img/icon/用户信息2.svg);
+}
+.pp2{
+	content: url(../img/icon/已购漫画.svg);
+}
+.pp3{
+	content: url(../img/icon/我的追漫.svg);
+}
+.pp4{
+	content: url(../img/icon/历史记录.svg);
+}
+.pp5{
+	content: url(../img/icon/个人消息.svg);
+}
+.pp6{
+	content: url(../img/icon/意见反馈.svg);
+}
+.menu_text_div{
+	width: 90px;
+	height: 56px;
+	max-width: 90px;
+	max-height: 56px;
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	flex: 1;
+	overflow:hidden;
+	font-size: 14px;
+	/* color: #32aaff; */
+}
+
+.content_div{
+	display: inline-block;
+	width: 800px ;
+	height: 460px;
+	
+}
+
+
+
+
+.title_h1{
+	    font-size: 24px;
+	    color: #2e2e2e;
+	    letter-spacing: 0;
+	    font-weight: 400;
+	    margin: 0;
+	    height: 26px;
+	    line-height: 26px;
+		text-align: left;
+}
+
+.option_div{
+	display: flex;
+	width: 798px ;
+	height: 53px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding-left:2px ;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	flex: 1;
+	overflow:hidden;
+	border-bottom: 1px solid #ddd;
+	color: #686869;
+}
+.child_option{
+	display: flex;
+	width: 120px;
+	height: 53px;
+	align-items:center;
+	cursor: pointer;
+}
+#child1{
+	color: #32aaff;
+}
+#child4{
+	color: #32aaff;
+}
+#child7{
+	color: #32aaff;
+}
+
+.option_centent_div{
+	width: 798px;
+	height: 365px;	
+	overflow:hidden;
+	padding-left:2px ;
+}
+
+.option_centent{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex: 1;
+	overflow:hidden;
+	margin-top: 30px;
+	
+}
+.option1_set{
+	margin-bottom: 30px;
+}
+.option2_set{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:flex-start;
+	width: 100%;
+	text-align: start;
+	margin-bottom: 30px;
+}
+
+
+.set_span1{
+	margin-right: 40px;
+}
+.set_span2{
+	margin-right: 10px;
+	
+}
+.userName{
+	margin-left: 23px;
+}
+.userNum{
+	margin-left: 26px;
+}
+
+
+.signature_input{
+	width: 70%;
+	height: 60px;
+	font-family: inherit;
+	outline: none;
+	color: initial;
+	border-radius: 4px;
+	border: 1px solid #bfcbd9;
+	resize: none;
+	padding:3px 8px 3px 8px;
+}
+.signature_input:hover {
+    border-color: #8391a5;
+}
+.signature_input:focus {
+    border-color: #32aaff;
+}
+.option_text:hover{
+	 border-color: #8391a5;
+}
+.option_text:focus{
+	border-color: #32aaff;
+}
+.option_text{
+		width: 225px;
+		height: 28px;
+		padding:0px 8px 0px 8px;
+	    border-radius: 4px;
+	    border: 1px solid #bfcbd9;
+		text-indent: 0px;
+		outline: 0;
+		box-sizing: border-box;
+}
+.sex_span{
+	width: 60px;
+	height: 20px;
+	padding: 5px 8px;
+	border: 1px solid #bfcbd9;
+	border-radius: 5px!important;
+	background: #f4f4f4;
+	color: #717171;
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+.btn_div{
+	
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	width: 100%;
+	text-align: start;
+	margin-top: 30px;
+	
+}
+.option_btn_div{
+	display: flex;
+	width: 118px;
+	height: 38px;
+	justify-content:center;
+	align-items:center;
+	margin-left: 280px;
+	/* white-space: nowrap; */
+	background: #00a1d6!important;
+	cursor: pointer;
+	border-radius: 5px!important;
+	color: #fff;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.collect{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex: 1;
+	overflow:hidden;
+	width: 100%;
+	height: 375px;	
+	overflow-y:scroll; 
+}
+
+.cartoon_collect{
+	width: 100px;
+	height: 180px;
+	margin:0px 20px 10px 10px ;
+}
+
+.collect_pt{
+	width: 100px;
+	height: 135px;
+	max-width: 100px;
+	max-height: 135px; 
+}
+
+.collect_title_div{
+	width: 100px;
+	height: 135px;
+}
+
+.collect_title_span{
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+	width: 100px;
+	height:20px ;
+	word-break:normal; 
+	width:auto;
+	/* white-space:pre-wrap; */
+	word-wrap : break-word ;
+	color: rgb(104, 104, 105);
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.collect_renewal_span{
+	display: block;
+	font-size: 12px;
+	color: #999;
+	font-family: "微软雅黑";
+}
+
+#pt1{
+	content: url(../img/cartoon/花丸幼稚园.jpg);
+	
+}
+#pt2{
+	content: url(../img/cartoon/初恋怪兽.jpg);
+	
+}
+#pt3{
+	content: url(../img/cartoon/夜曲.jpg);
+	
+}
+#pt4{
+	content: url(../img/cartoon/武林之王的退隐生活.jpg);
+}
+
+#pt5{
+	content: url(../img/cartoon/阿波连.jpg);
+}
+#pt6{
+	content: url(../img/cartoon/动物园.jpg);
+}
+#pt7{
+	content: url(../img/cartoon/神兽.jpg);
+}
+#pt8{
+	content: url(../img/cartoon/英雄再临.jpg);
+}
+#pt9{
+	content: url(../img/cartoon/休屠.jpg);
+}
+#pt10{
+	content: url(../img/cartoon/休屠.jpg);
+}
+
+
+#history_pt1{
+	content: url(../img/cartoon/花丸幼稚园.jpg);
+	
+}
+#history_pt2{
+	content: url(../img/cartoon/初恋怪兽.jpg);
+	
+}
+#history_pt3{
+	content: url(../img/cartoon/夜曲.jpg);
+	
+}
+#history_pt4{
+	content: url(../img/cartoon/武林之王的退隐生活.jpg);
+}
+
+#history_pt5{
+	content: url(../img/cartoon/阿波连.jpg);
+}
+#history_pt6{
+	content: url(../img/cartoon/动物园.jpg);
+}
+#history_pt7{
+	content: url(../img/cartoon/神兽.jpg);
+}
+#history_pt8{
+	content: url(../img/cartoon/英雄再临.jpg);
+}
+#history_pt9{
+	content: url(../img/cartoon/休屠.jpg);
+}
+#history_pt10{
+	content: url(../img/cartoon/休屠.jpg);
+}
+
+#history{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex: 1;
+	overflow:hidden;
+	width: 100%;
+	height: 375px;	
+	margin-top: 40px;
+	overflow-y:scroll; 
+}
+
+#cartoon_history{
+	width: 100px;
+	height: 200px;
+	margin:0px 20px 10px 10px ;
+}
+
+.message_btn{
+	padding-top: 8px;
+	height: 20px;
+	width: 30px;
+	background:#fff; color: #686869;
+}
+.message_btn:active{
+	background:#22a1d6; color: #fff;
+}
+
+.letterBox{
+	margin-top: 10px;
+}
+
+#option1_set_message{
+	display: flex;
+	height: 40px;
+	justify-content:flex-start;
+	align-items:center;
+	color: #333333;
+	margin-bottom: 10px;
+}
+#option1_set_message2{
+	display: flex;
+	height: 40px;
+	min-height: 40px;
+	width: 100%;
+	justify-content:space-around;
+	align-items:center;
+	background: #ECEDF0;
+	color: #333333;
+	margin-bottom: 15px;
+}
+.collect_title_div{
+	margin-top: 20px;
+}
+.letter_div{
+	display: flex;
+	justify-content:flex-start;
+	align-items:center;
+	color: #686869;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+
+.letter_checkbox{
+	margin-right: 30px;
+}
+.letter_checkbox2{
+	margin-right: 30px;
+}
+
+.letter_sapn{
+	
+	display: inline-block;
+	width: 80px;
+	margin-left: 55px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 30px;
+}
+
+#letter_time{
+	margin-left:293px ;
+}
+.letterBox_div{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex: 1;
+	overflow:hidden;
+	width: 100%;
+	height: 240px;
+	max-height: 240px;
+	overflow-y:scroll;
+	/* background: #00A1D6; */
+	
+}
+
+#system_letterbox{
+	/* margin-top: 15px; */
+	height: 345px;
+	max-height: 340px;
+	
+}
+
+#system_letter{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	/* margin-left: 10px; */
+	width: 90%;
+	/* background: #10A656; */
+	border: 1px solid #999;
+	padding: 20px 30px 20px 30px;
+	border-radius: 4px;
+	
+}
+
+.system_title{
+	    color: #333;
+	    font-weight: 700;
+}
+
+.system_time{
+	    color: #999;
+	    font-size: 12px;
+	    line-height: 22px;
+	    margin: 0 10px;
+}
+
+.system_bottom{
+	/* padding: 0px 10px; */
+	text-align: left;
+}
+.system_centent{
+	line-height: 24px;
+}
+
+#send_btn{
+	margin-left: 0px;
+}
+
+#send_centent{
+	height: 120px;
+	line-height: 24px;
+}
+
+#martop{
+	margin-top: 15px;
+}
+
+.feedback{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex: 1;
+	overflow:hidden;
+	overflow-y:scroll;
+	margin: 20px 0px 0px 0px;
+	height: 412px;
+	
+}
+
+.feedback_span{
+	
+	margin-bottom: 8px;
+	font-size: 14px;
+	color: #000000;
+}
+
+#feedback_centent{
+	height: 200px;
+	line-height: 24px;
+}
+
+
+.selectbox:hover{
+	 border-color: #8391a5;
+}
+.selectbox:focus{
+	border-color: #32aaff;
+}
+.selectbox{
+	width: 225px;
+	height: 28px;
+	padding:0px 8px 0px 8px;
+	border-radius: 4px;
+	border: 1px solid #bfcbd9;
+	text-indent: 0px;
+	outline: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: #686869;
+}
+
+.option3_set{
+	margin-bottom: 15px;
+}
+.option4_set{
+	margin-bottom: 10px;
+}

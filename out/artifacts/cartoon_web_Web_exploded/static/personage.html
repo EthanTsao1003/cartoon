@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>艾漫</title>
+		<link rel="icon" href="img/title.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/page.css" />
+		<link rel="stylesheet" href="css/personage.css" />
+		<link rel="stylesheet" href="css/loging.css" />
+	</head>
+	<body>
+		<div class = "personage_body body_div" >
+			<div style="height: 50px; width:100%;margin:0 auto;box-shadow: 0 0 5px 0px rgba(158,179,193,.5);">
+			<div class = "personage_top page_top_div">
+				<div class="page_top_left_div">
+					<div class="page_mark_div">
+						<div style="display: inline; width: 40px; height: 40px;">
+							<img class="page_mark_img" />
+						</div>
+						<a class="page_top_a" href="javascript:;"><span style="width: 20px; height: 20px;  position: relative;bottom: 10px;">艾 漫</span></a>
+					</div>
+					<div class="page_top_label_div">
+						<div class="page_top_a" id="a_page">首页</div>
+						<div class="page_top_a2 page_top_a">分类</div>
+						<div class="page_top_a2 page_top_a">排行榜</div>
+					</div>
+				</div>
+				<div class="page_top_right_div" >
+					<!--搜索框-->
+					<div class="container">
+					    <form action="" class="parent">
+					        <input type="text" class="search" placeholder="搜索">
+					        <input type="button" name="" id="" class="btn">
+					    </form>
+					</div>
+					
+					
+						<div class="page_head_div" id="page_head_div">
+							<img alt="" class="personage_head_img page_head_img" />
+							<a  class="page_head_a" id="personage"><span style=" position: relative; left: 10px; bottom: 12px; color:#333333;white-space:nowrap;">个人中心</span></a>
+							<a  class="page_head_a" id="switchover"><span style="position: relative; left: 30px; bottom: 12px; color:#333333;white-space:nowrap;">切换账号</span></a>
+							<a><span class="page_head_a" style="width: 2px; height: 20px; position: relative; bottom: 13px; left: 27px; margin-left: 4px; margin-right: 4px;">|</span></a>
+							<a  class="page_head_a" id="logout"><span style="position: relative; left: 12px; bottom: 12px; color:#333333;white-space:nowrap;">注销</span></a>
+						</div>
+						
+						<div class="page_loging_div" id="page_loging_div">
+							<div  style="display: inline-block;cursor: pointer;" id="login_shade"><span style="color:#333333;" >登录</span></div>
+							<div  style="display: inline-block;"><span style="position: relative; bottom: 1px; color:#333333; margin-left: 4px; margin-right: 4px; ">|</span></div>
+							<div  style="display: inline-block; cursor: pointer;" id="register_shade"><span style="color:#333333;">注册</span></div>
+						</div>
+					
+				</div>
+			</div>
+			</div>
+			
+			
+			<div class="personage_second_div">
+				<div class="personage_menu">
+					<div class="menu" id="menu1">
+						<div class="menu_img_div">
+							<img class="pp1 menu_img"  />
+						</div>
+						<div class="menu_text_div">
+							用户信息
+						</div>
+					</div>
+					
+					<div class="menu" id="menu2">
+						<div class="menu_img_div">
+							<img class="pp2 menu_img"/>
+						</div>
+						<div class="menu_text_div">
+							已购漫画
+						</div>
+					</div>
+					
+					<div class="menu"  id="menu3">
+						<div class="menu_img_div">
+							<img class="pp3 menu_img"/>
+						</div>
+						<div class="menu_text_div">
+							我的追漫
+						</div>
+					</div>
+					
+					<div class="menu" id="menu4">
+						<div class="menu_img_div">
+							<img class="pp4 menu_img"/>
+						</div>
+						<div class="menu_text_div">
+							历史记录
+						</div>
+					</div>
+					
+					<div class="menu" id="menu5">
+						<div class="menu_img_div">
+							<img class="pp5 menu_img"/>
+						</div>
+						<div class="menu_text_div">
+							个人消息
+						</div>
+					</div>
+					
+					<div class="menu" id="menu6">
+						<div class="menu_img_div">
+							<img class="pp6 menu_img"/>
+						</div>
+						<div class="menu_text_div">
+							意见反馈
+						</div>
+					</div>
+			
+					
+				</div>
+				<div class="menu_content">
+					<!-- 用户信息 -->
+					<div class="content_div" id="menu1_content">
+						<h1 class="title_h1">用户信息</h1>	
+						<div class="option_div">
+							
+							<div class="child_option" id="child1">
+								账户设置
+							</div>
+							
+							<div class="child_option" id="child2">
+								个人资料
+							</div>
+							
+							<div class="child_option" id="child3">
+								头像设置
+							</div>
+							
+						</div>
+						
+						<div class="option_centent_div">
+							<div class="option_centent option_centent_div" id="option1">
+								<div class="option1_set">
+									<span class="set_span1">登录密码:</span>
+									<span class="set_span1">未设置</span>
+									<span class="set_span1">设置密码</span>
+								</div>
+								
+								<div class="option1_set">
+									<span class="set_span1">绑定手机:</span>
+									<span class="set_span1">未绑定</span>
+									<span class="set_span1">绑定手机</span>
+								</div>
+								
+								<div class="option1_set">
+									<span class="set_span1">绑定邮箱:</span>
+									<span class="set_span1">未绑定</span>
+									<span class="set_span1">绑定邮箱</span>
+								</div>
+							</div>
+							
+							<div class="option_centent option_centent_div" id="option2">
+								<div class="option1_set">
+									<span class="userName set_span2">名称:</span>
+									<input class="option_text" id="username" type="text" placeholder="艾_______" />
+								</div>
+								
+								<div class="option1_set">
+									<span class="userNum set_span2">UID:</span>
+									<span class="set_span2">27390524</span>
+								</div>
+								
+								<div class="option2_set">
+									<span class="set_span2">我的签名:</span>
+									<textarea class="signature_input" maxlength="200" placeholder="这家伙很懒，什么都没留下~~~~" ></textarea>
+								</div>
+								
+								<div class="option1_set">
+									<span class="userName set_span2">性别:</span>
+									<span class="sex_span">男</span>
+									<span class="sex_span">女</span>
+									<span class="sex_span" id="sex_save" style="background:#22a1d6; color: #fff;">保密</span>
+								</div>
+								<div class="btn_div">
+									<div class="option_btn_div">保存</div>
+								</div>
+							</div>
+							
+							<div class="option_centent option_centent_div" id="option3">
+							
+							</div>
+						</div>
+						
+					</div>
+					
+					<!-- 已购漫画 -->
+					<div class="content_div" id="menu2_content">
+						<h1 class="title_h1">已购漫画</h1>
+					</div>
+					<!-- 我的追漫 -->
+					<div class="content_div" id="menu3_content">
+						<h1 class="title_h1">我的追漫</h1>
+						<div class="option_div">
+							
+							<div class="child_option" id="child4">
+								追漫顺序
+							</div>
+							
+							<div class="child_option" id="child5">
+								更新时间
+							</div>
+							
+							<div class="child_option" id="child6">
+								最近阅读
+							</div>
+							
+						</div>
+						<div>
+							<div class="collect option_centent_div" id="collect1" >
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt1"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt2"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt3"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt4"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt5"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt6"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt7"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt8"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt9"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt10"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt11"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt12"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								<div class="cartoon_collect">
+									<div class="collect_title_div">
+										<img class="collect_pt cartoon_title_img" id="pt13"/>
+									</div>
+									<span class="collect_title_span">花丸幼稚园</span>
+									<span class="collect_renewal_span">已完结</span>
+								</div>
+								
+								
+							</div>
+						</div>
+					
+					</div>
+					
+					<!-- 历史记录 -->
+					<div class="content_div" id="menu4_content">
+						<h1 class="title_h1">历史记录</h1>
+						
+						<div class="option_centent_div" id="history" >
+							<div class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt1"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/12/5 12:23</span>
+							</div>
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt2"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/12/5 12:23</span>
+							</div>
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt3"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/12/5 12:23</span>
+							</div>
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt4"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/12/8 12:23</span>
+							</div>
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt5"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/12/8 12:23</span>
+							</div>
+							
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt6"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/11/28 9:23</span>
+							</div>
+							
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt7"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/11/28 9:23</span>
+							</div>
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt8"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/11/28 9:23</span>
+							</div>
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt9"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/11/28 9:23</span>
+							</div>
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="pt10"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/12/1 18:23</span>
+							</div>
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt11"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/12/1 18:23</span>
+							</div>
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt12"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/12/1 18:23</span>
+							</div>
+							
+							<div  class="cartoon_collect" id="cartoon_history">
+								<div class="collect_title_div">
+									<img class="collect_pt cartoon_title_img" id="history_pt13"/>
+								</div>
+								<span class="collect_title_span">花丸幼稚园</span>
+								<span class="collect_renewal_span">看到第2话</span>
+								<span class="collect_renewal_span">2019/12/1 18:23</span>
+							</div>
+						</div>
+					</div>
+					<!-- 个人消息 -->
+					<div class="content_div" id="menu5_content">
+						<h1 class="title_h1">个人消息</h1>
+						<div class="option_div">
+							
+							<div class="child_option" id="child7">
+								收件箱
+							</div>
+							
+							<div class="child_option" id="child8">
+								发件箱
+							</div>
+							
+							<div class="child_option" id="child9">
+								写短息
+							</div>
+							
+							<div class="child_option" id="child10">
+								系统通知
+							</div>
+							
+						</div>
+						
+						<div class="option_centent_div">
+							<!-- 收件箱 -->
+							<div class="option_centent option_centent_div letterBox" id="option7">
+								<div class="option1_set" id="option1_set_message">
+										<span class="message_btn sex_span" id="check_all" >全选</span>
+										<span class="message_btn sex_span" id="deselect_all" >取消</span>
+										<span class="message_btn sex_span" id="delete" >删除</span>
+								</div>
+								
+								<div class="option1_set" id="option1_set_message2">
+									<span class="letter_title">发件人</span>
+									<span class="letter_title">日期</span>
+								</div>
+								
+								<div class="letterBox_div">
+									<div class="option1_set letter_div" >
+										<input class="letter_checkbox" type="checkbox" />
+										<span class="letter_sapn" id="letter_name">不笑猫</span>
+										<span class="letter_sapn" id="letter_time">2013/12/12</span>
+									</div>
+									
+									<div class="option1_set letter_div" >
+										<input type="checkbox" class="letter_checkbox"/>
+										<span class="letter_sapn" id="letter_name">名字太长了</span>
+										<span class="letter_sapn" id="letter_time">2013/12/12</span>
+									</div>
+											
+									<div class="option1_set letter_div" >
+										<input type="checkbox" class="letter_checkbox"/>
+										<span class="letter_sapn" id="letter_name">名字太长了，就显示不了</span>
+										<span class="letter_sapn" id="letter_time">2013/12/12</span>
+									</div>
+									
+									<div class="option1_set letter_div" >
+										<input type="checkbox" class="letter_checkbox"/>
+										<span class="letter_sapn" id="letter_name">不笑猫</span>
+										<span class="letter_sapn" id="letter_time">2013/12/12</span>
+									</div>
+									
+									<div class="option1_set letter_div" >
+										<input type="checkbox" class="letter_checkbox"/>
+										<span class="letter_sapn" id="letter_name">不笑猫</span>
+										<span class="letter_sapn" id="letter_time">2013/12/12</span>
+									</div>
+									
+									<div class="option1_set letter_div" >
+										<input type="checkbox" class="letter_checkbox"/>
+										<span class="letter_sapn" id="letter_name">不笑猫</span>
+										<span class="letter_sapn" id="letter_time">2013/12/12</span>
+									</div>
+								</div>
+								
+							</div>
+							<!-- 发件箱 -->
+							<div class="option_centent option_centent_div letterBox" id="option8">
+							<div class="option1_set" id="option1_set_message">
+									<span class="message_btn sex_span" id="check_all2" >全选</span>
+									<span class="message_btn sex_span" id="deselect_all2" >取消</span>
+									<span class="message_btn sex_span" id="delete2" >删除</span>
+							</div>
+							
+							<div class="option1_set" id="option1_set_message2">
+								<span class="letter_title">收件人</span>
+								<span class="letter_title">日期</span>
+							</div>
+							
+							<div class="letterBox_div">
+								<div class="option1_set letter_div" >
+									<input class="letter_checkbox2" type="checkbox" />
+									<span class="letter_sapn" id="letter_name">不笑猫</span>
+									<span class="letter_sapn" id="letter_time">2013/12/12</span>
+								</div>
+								
+								<div class="option1_set letter_div" >
+									<input type="checkbox" class="letter_checkbox2"/>
+									<span class="letter_sapn" id="letter_name">名字长就显示不了啦</span>
+									<span class="letter_sapn" id="letter_time">2013/12/12</span>
+								</div>
+										
+								<div class="option1_set letter_div" >
+									<input type="checkbox" class="letter_checkbox2"/>
+									<span class="letter_sapn" id="letter_name">不笑猫</span>
+									<span class="letter_sapn" id="letter_time">2013/12/12</span>
+								</div>
+								
+								<div class="option1_set letter_div" >
+									<input type="checkbox" class="letter_checkbox2"/>
+									<span class="letter_sapn" id="letter_name">不笑猫</span>
+									<span class="letter_sapn" id="letter_time">2013/12/12</span>
+								</div>
+								
+								<div class="option1_set letter_div" >
+									<input type="checkbox" class="letter_checkbox2"/>
+									<span class="letter_sapn" id="letter_name">不笑猫</span>
+									<span class="letter_sapn" id="letter_time">2013/12/12</span>
+								</div>
+								
+								<div class="option1_set letter_div" >
+									<input type="checkbox" class="letter_checkbox2"/>
+									<span class="letter_sapn" id="letter_name">不笑猫</span>
+									<span class="letter_sapn" id="letter_time">2013/12/12</span>
+								</div>
+							</div>
+							</div>
+							<!-- 写短信 -->
+							<div class="option_centent option_centent_div letterBox" id="option9">
+								
+								
+								<div class="option1_set" id="martop">
+									<input class="option_text" id="addresses" type="text" placeholder="请输入收件人ID..." />
+								</div>
+								
+								<div class="option2_set">
+									<textarea class="signature_input" id="send_centent" maxlength="200" placeholder="内容..." ></textarea>
+								</div>
+								
+								<div class="option2_set" >
+									<div class="option_btn_div" id="send_btn">发送</div>
+								</div>
+							</div>
+							<!-- 系统通知 -->
+							<div class="option_centent option_centent_div letterBox" id="option10">
+								<div class="letterBox_div" id="system_letterbox">
+									
+									<div class="option1_set" id="system_letter">
+										<div class="system_top">
+											<span class="system_title">“2020年度动画评选”投票开始！</span>
+											<span class="system_time">2019年11月2日 11:00</span>
+										</div>
+										<div class="system_bottom">
+											<span class="system_centent">
+												东京动画奖节2020的“年度动画”评选新增“海外人气奖”，并在bilibili开设了投票专场；你的选择，将直接决定最终的评选
+												结果。“BEST100”票选阶段现已开启，投票入口→  网页链接 快来选出你心中的年度最佳动画吧~
+											</span>
+										</div>
+									</div>
+									
+									<div class="option1_set" id="system_letter">
+										<div class="system_top">
+											<span class="system_title">独家直播！初音未来12周年 魔法未来2019演唱会</span>
+											<span class="system_time">2019年8月31日 14:00</span>
+										</div>
+										<div class="system_bottom">
+											<span class="system_centent">
+												魔法应援开启！在虚拟歌手【初音未来】12周年之际，B站将于8月31日16:00独家直播
+												「初音未来 Magical Mirai 2019演唱会」，更有山下智博、小仙若等UP主带来的前
+												线团报导！看直播，抽幸运奖品：  网页链接 ，直播结束后，还有大会员专享点播
+												放送噢→  网页链接
+											</span>
+										</div>
+									</div>
+									
+									<div class="option1_set" id="system_letter">
+										<div class="system_top">
+											<span class="system_title">哔哩哔哩漫画跨年有礼！免费看漫画还能抽大奖！</span>
+											<span class="system_time">2018年12月30日 13:25</span>
+										</div>
+										<div class="system_bottom">
+											<span class="system_centent">
+												一大波漫读券来袭，精品日漫国漫，领券免费看过瘾(≧∇≦)ﾉ更有大奖连抽7天，
+												iPhone XS Max、Switch游戏机宝可梦限定款等你来拿！传送门→
+												（http://manga.bilibili.com/activity/lottery.html?from=pink_message）
+											</span>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content_div" id="menu6_content">
+						<h1 class="title_h1">意见反馈</h1>
+						
+						<div class="feedback">
+							
+							<div class="option4_set" >
+								<span class="feedback_span">反馈类型</span>
+								<span style="color: #FF0000;"> *</span>
+							</div>
+							
+							<div class="option3_set" >
+								<select class="selectbox">
+									<option selected="selected">请选择</option>
+									<option>漫画阅读</option>
+									<option>功能体验</option>
+									<option>漫画购入</option>
+								</select>
+							</div>
+							
+							<div class="option4_set" >
+								<span class="feedback_span">联系方式</span>
+							</div>
+							
+							<div class="option3_set" >
+								<input class="option_text" id="qq" type="text" placeholder="QQ号..." />
+							</div>
+							
+							<div class="option4_set" >
+								<span class="feedback_span">详细内容</span>
+							</div>
+							
+							<div class="option2_set">
+								<textarea class="signature_input" id="feedback_centent" maxlength="2000" placeholder="..." ></textarea>
+							</div>
+							
+							<div class="option2_set" >
+								<div class="option_btn_div" id="send_btn">发送</div>
+							</div>
+						</div>
+						
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!--登录框-->
+		<div class="loging_shade" id="loging_shade">
+			<div class="login_div">
+				<div class="frame">
+					<div class="loginOrRegister">
+						<div class="login" id="login">
+							登录
+						</div>
+
+						<div class="register">
+							注册
+						</div>
+					</div>
+					<div class="login_frm" id="login_frm">
+						<p class="message"></p>
+						<div class="input">
+							<input type="text" placeholder="请输入手机号/邮箱" class="user_message" id="login_user"/>
+						</div>
+						<p class="message"></p>
+						<div class="input">
+							<input type="password" placeholder="请输入密码"  class="password_message" id="login_password"/>
+						</div>
+						<p class="message" id="password_error"></p>
+						<div class="checkbox_div">
+							<input type="checkbox" style="background-color: initial; cursor: default;-webkit-appearance: checkbox;box-sizing: border-box; margin: 3px 3px 3px 0px;padding: initial; border: initial;" />
+							<label>记住我</label>
+							<div class="query_div">
+								<a class="checkbox_label" style="margin-right: 15px;">无法验证？</a>
+								<a class="checkbox_label">忘记密码？</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="btn_login">
+								<span>登录</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="register_frm">
+						<p class="message"></p>
+						<div class="input">
+							<input type="text" maxlength="20" placeholder="请输入手机号/邮箱" class="user_message" id="register_user"/>
+						</div>
+						<p class="message"></p>
+						<div class="input">
+							<input type="password" maxlength="16" placeholder="请输入密码"  class="password_message" id="register_password"/>
+						</div>
+						<p class="message"></p>
+						<div class="input">
+							<input type="password" maxlength="16" placeholder="请确认密码"  class="password_message" id="register_password2"/>
+						</div>
+						<p class="message"></p>
+						<div class="row">
+							<div class="btn_register">
+								<span>注册</span>
+							</div>
+						</div>
+					</div>
+					<div class="pop">加载中...</div>
+					<div class="btn_close"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/personage.js"></script>
+	</body>
+
+</html>
